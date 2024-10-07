@@ -2,7 +2,7 @@
 
 Submitted by: **Malhiya Arnib**
 
-This web app: **Learn common arabic phrases! (For people who can read Arabic)**
+This web app: **Learn common arabic phrases!Look the the cards and click to see the english translation. You can also type in your guess! (For people who can read Arabic)**
 
 Time spent: **10** hours spent in total
 
@@ -40,8 +40,10 @@ GIF created with LiceCap
 [peek](https://github.com/phw/peek) for Linux. -->
 
 ## Notes
+* I had trouble with understanding event handler functon from class. I looked at the resources that codePath gave and looking at resources on Goodle helped me have a better understanding. 
+* A challenge I had was changing the color of the input box to indicate whether the user guess was right or wrong. I used chatGPT to know how to change the input class. It gave me the setInputClass function which I ended up using and it worked.
+* I also had trouble with my h1 where the top half of the text cut off. I asked chatGPT what the problem was and I found out that I needed to change my height for the body to min-height.
 
-Describe any challenges encountered while building the app.
 
 ## License
 
