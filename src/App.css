@@ -5,17 +5,34 @@
   text-align: center;
 }
 
-.App {
+/* .App {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Use full height of the viewport */
+  height: 100vh; 
+  overflow: visible;
+} */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Ensure content starts at the top */
+  height: auto; /* Change if set to 100vh */
 }
 
+.header {
+  padding: 1rem; /* Add some padding to prevent cutoff */
+  margin: 1rem 0; /* Increase margin for spacing */
+}
+
+.header h1 {
+  margin-bottom: 1rem; /* Adjust margin as needed */
+}
 body {
   margin: 0; 
-  height: 100vh; 
+  min-height: 100vh; 
   background-image: url('./images/background.png'); 
   background-size: cover;
   background-position: center; 
@@ -64,11 +81,23 @@ body {
   transform: rotateY(0);
 }
 
-#next {
+#next #prev {
   margin-top: 1rem; 
-  padding: 0.5rem 1rem; 
+  padding: 1rem 1rem; 
   font-size: 1.5rem;
   cursor: pointer; 
   height: 2em;
   width: 3em;
+}
+
+.default-input {
+  border: 1px solid gray;
+}
+
+.valid-input {
+  border: 3px solid green;
+}
+
+.invalid-input {
+  border: 3px solid red;
 }
